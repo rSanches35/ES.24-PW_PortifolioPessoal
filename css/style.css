@@ -2,79 +2,65 @@ body{
     margin: 0px;
     padding: 0px;
     height: 100vh;
-    background-color: #abe8ec;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+.home{
+    background-color: #e6d1ff;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.center{
-    width: 1150px;
-    height: 680px;
-    border-radius: 30px;
-    background-color: #ffffff;
-    box-shadow: 6px 6px 15px #659497;
-
-    display: flex;
-    align-items: center;
-}
-
-/*
-.center-left{
-    height: 680px;
-    width: 80px;
-    position: absolute;
-    left: 0px;
-    border-radius: 0px 30px 30px 0px;
-    background-color: #ffffff;
-    box-shadow: 6px 6px 15px #659497;
-}
-
-.center-right{
-    height: 680px;
-    width: 80px;
-    position: absolute;
-    right: 0px;
-    border-radius: 30px 0px 0px 30px;
-    background-color: #ffffff;
-    box-shadow: 6px 6px 15px #659497;
-}
-*/
-
-.left_sec{
-    width: 350px;
-    height: 91%;
-    border-right: solid 2px #45959b;
-}
-
-.left_sec_top{
-    margin-top: 20px;
-
-    display: flex;
-    justify-content: center;
-}
-
-.left_sec_bottom{
-    margin-top: -8px;
-    font-size: 14.5px;
-    font-family: "Rajdhani", sans-serif;
-    color: #45959b;
-
-    display: flex;
-    justify-content: center;
-}
-
-.left_sec_foto{
+.profile-pic{
     width: 200px;
     height: 200px;
-    border-radius: 70px;
-    border: solid 3px #45959b;
+    filter: drop-shadow(2px 2px 15px #8f8f8f);
 }
 
-.right_sec{
-    width: 100cqmin;
-    height: 91%;
-    overflow: auto;
-    background-color: #ffffff;
+.projects{
+    background-color: #823ecf;
+}
+
+.skills{
+    background-color: #a86eeb;
+}
+
+
+.button{
+    width: 50px;
+    height: 50px;
+
+    background-color: #e6d1ff;
+    border-radius: 50%;
+
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    filter: drop-shadow(2px 2px 8px #333333);
+}
+
+
+.topbar {
+    padding: 14px 20px;
+    height: 50px;
+
+    background-color: #e6d1ff;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-bottom: -76px;
+}
+
+.right-items img {
+    margin-left: 15px;
+    height: 45px;
 }
