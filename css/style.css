@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     margin: 0px;
     padding: 0px;
@@ -6,11 +10,77 @@ body{
 
 section{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+
+
+/*    Topbar     */
+
+.topbar {
+    padding: 14px 45px;
+    height: 50px;
+
+    background-color: #d7c3f0;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    margin-bottom: -78px;
+}
+
+.right-items img {
+    margin-top: 28px;
+    margin-left: 22px;
+    height: 45px;
+
+    transition: transform 0.3s ease;   
+}
+
+.right-items img:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/*    Button     */
+
+.buttons{
+    width: 60px;
+    height: 250px;
+
+    background-color: #d7c3f0;
+    border-radius: 50px;
+
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    box-shadow: 2px 2px 10px #707070;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: #c1aeda;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+/*   Section 1   */
+
 .home{
-    background-color: #e6d1ff;
+    background-color: #d7c3f0;
 
     display: flex;
     align-items: center;
@@ -22,45 +92,249 @@ section{
     width: 200px;
     height: 200px;
     filter: drop-shadow(2px 2px 15px #8f8f8f);
+
+    transition: transform 0.3s ease;
 }
+
+.profile-pic:hover {
+    transform: translateY(-2px);
+}
+
+
+
+/*   Section 2   */
+
+.about{
+    background-color: #875db6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    height: auto;
+    font-family: "Rajdhani", sans-serif;
+    font-size: larger;
+}
+
+.card{
+    margin-top: 40px;
+
+    background-color: #9b6cd1;
+    max-width: 55%;
+
+    padding: 40px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+
+.a-text{
+
+    text-align: justify;
+
+    font-size: large;
+    line-height: 1.5;
+}
+
+/*   Section 3   */
 
 .projects{
     background-color: #823ecf;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    height: auto;
+    font-family: "Rajdhani", sans-serif;
+    font-size: larger;
 }
+
+.projects-grid-container{
+    margin: 8px;
+    gap: 1.4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    min-height: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-grid-item{
+    padding: 30px;
+    background-color: #ccb6e6;
+
+    height: 355px;
+    width: 155px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    border-radius: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+.projects-grid-item:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 10px 10px 40px rgb(151, 109, 199);
+}
+
+.projects-grid-item img{
+
+    width: 180px;
+    height: 270px;
+
+    border-radius: 12px;
+
+    object-fit: cover;
+
+}
+
+.projects-grid-item h3, a{
+    margin: 0px;
+    text-align: center;
+
+    text-decoration: none;
+    color: #414141;
+}
+
+.p-title{
+    margin-top: 200px;
+    padding: 18px;
+}
+
+.p-description{
+    margin-bottom: 2px;  
+}
+
+/*   Section 4   */
 
 .skills{
     background-color: #a86eeb;
-}
 
-
-.button{
-    width: 50px;
-    height: 50px;
-
-    background-color: #e6d1ff;
-    border-radius: 50%;
-
-    position: fixed;
-    left: 30px;
-    bottom: 30px;
-    filter: drop-shadow(2px 2px 8px #333333);
-}
-
-
-.topbar {
-    padding: 14px 20px;
-    height: 50px;
-
-    background-color: #e6d1ff;
-    
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    
-    margin-bottom: -76px;
+    justify-content: center;
+
+    flex-direction: column;
+
+    height: auto;
+    font-family: "Rajdhani", sans-serif;
+    font-size: large;
 }
 
-.right-items img {
-    margin-left: 15px;
-    height: 45px;
+.skills-grid-container{
+    margin: 8px;
+    gap: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60%;
+    min-height: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-grid-item{
+    padding: 35px;
+    background-color: #ecdbff;
+
+    height: 130px;
+    width: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    border-radius: 12px;
+
+    transition: transform 0.3s ease;
+}
+
+.skills-grid-item:hover{
+    transform: translateY(-8px);
+
+    box-shadow: 10px 10px 40px rgb(206, 164, 255);
+}
+
+.skills-grid-item img{
+    width: 100px;
+    height: 100px;
+}
+
+.progress-bar-30{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 30%;}
+.progress-bar-40{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 40%;}
+.progress-bar-45{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 45%;}
+.progress-bar-50{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 50%;}
+.progress-bar-55{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 55%;}
+.progress-bar-60{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 60%;}
+.progress-bar-70{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 70%;}
+.progress-bar-80{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 80%;}
+.progress-bar-85{ height: 100%; background-color: #9b6cd1; border-radius: 3px; width: 85%;}
+
+.progress-bar-base{ height: 8px; background-color: #b4b4b4; margin-top: 20px; border-radius: 3px; width: 100%;}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .buttons, .button{
+        visibility: hidden;
+    }
+
+    .skills-grid-item{
+        padding: 25px;
+        background-color: #ecdbff;
+    
+        height: 50px;
+        width: 50px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        flex-direction: column;
+    
+        border-radius: 12px;
+    
+        transition: transform 0.3s ease;
+    }
+
+    .skills-grid-item img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .skills-grid-item:hover{
+        transform: translateY(0px);
+    }
+
+    .progress-bar-base{
+        visibility: hidden;
+        margin-top: 0px;
+    }
 }
