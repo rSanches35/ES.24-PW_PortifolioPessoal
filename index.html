@@ -1,139 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/favicon.webp">
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-
-    <title>Portfolio rSanches</title>
+    <title>rSanches Portfolio</title>
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="topbar">
-        <div class="right-items">
-            <img src="img/p_i_discord.webp" alt="">
-            <a href="https://github.com/Xanxesss"><img src="img/p_i_github.webp" alt=""></a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+        <a href="#">Início</a>
+        <a href="#">Habilidades</a>
+        <a href="#">Projetos</a>
+
+        <div class="dark_mode">
+            <label id="moon" class="icon_sun_moon"><i class="fa-solid fa-moon"></i></label>
+            <label id="sun" class="icon_sun_moon"><i class="fa-solid fa-sun"></i></label>
+            <label class="switch">
+                <input type="checkbox">
+                <span onclick="lightDarkTheme()" class="slider"></span>
+            </label>
         </div>
-    </header>
-    <div class="buttons">
-        <a href="#home"><div class="button"></div></a>
-        <a href="#about"><div class="button"></div></a>
-        <a href="#projects"><div class="button"></div></a>
-        <a href="#skills"><div class="button"></div></a>
     </div>
-    <section class="home" id="home">
-        <h2 style="text-align: center;">Olá, sou um estudante do IFPR, <br>Bacharelado em Engenharia de Software</h2>
-        <br>
-        <img src="img/foto_perfil.webp" class="profile-pic" alt="">
-        <h1>RAFAEL SANCHES</h1>
-    </section>
-    <section class="about" id="about">
-        <div class="card">
-            <h1>SOBRE MIM</h1>
-            <br>
-            <div class="a-text">
-                <strong>
-                    <p>Olá! Sou Rafael Sanches Silva, tenho 20 anos.</p>
-                    <p>Iniciei minha jornada acadêmica no Instituto Federal do Paraná (IFPR Campus Paranavaí), onde me formei no Curso Técnico Integrado ao Ensino Médio, mergulhando de cabeça no mundo da informática. Atualmente estou cursando o Bacharelado em Engenharia de Software no mesmo instituto, encontrando-me no terceiro ano. Recentemente descobri uma área pela qual gostaria de me dedicar, design. Explorar a interseção entre engenharia de software e design tem sido uma experiência empolgante. Minha admiração por resolver problemas e criar soluções inovadoras impulsiona-me a explorar as nuances da engenharia de software, sempre em busca de aprender e evoluir. Este é um portfolio experimental, construído apenas com HTML e CSS!</p>
-                </strong>
-            </div>
-        </div>
-        <br>
-    </section>
-    <section class="projects" id="projects">
-        <h1>PROJETOS GITHUB</h1>
-        <br>
-        <div class="projects-grid-container">
-            <a href="https://github.com/Xanxesss/poo-game-2023">
-                <div class="projects-grid-item" class="g-i-html">
-                    <img src="img/p_jogo.webp" alt="">
-                    <h3 class="p-title">Jogo 2d</h3>
-                    <h3 class="p-description">Hybernate &&<br> Java</h3>
-                </div>
-            </a>
-            <a href="https://github.com/Xanxesss/Simulador-Processador-Monociclo">
-                <div class="projects-grid-item" class="g-i-css">
-                    <img src="img/p_processador.webp" alt="">
-                    <h3 class="p-title">Processador Monociclo</h3>
-                    <h3 class="p-description">C</h3>
-                </div>
-            </a>
-            <a href="https://github.com/Xanxesss/Comes">
-                <div class="projects-grid-item" class="g-i-java">
-                    <img src="img/p_comes.webp" alt="">
-                    <h3 class="p-title">Comes</h3>
-                    <h3 class="p-description">Django &&<br> Python</h3>
-                </div>
-            </a>
-        </div>
-        <br>
-    </section>
 
+    <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
 
-    <section class="skills" id="skills">
-        <h1>SOFTWARES && TECNOLOGIAS</h1>
-        <br>
-        <div class="skills-grid-container">
-            <div class="skills-grid-item" class="g-i-html">
-                <img src="img/i_html.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-80"></div>
-                </div>
-            </div>
-            <div class="skills-grid-item" class="g-i-css">
-                <img src="img/i_css.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-55"></div>
-                </div>
-            </div>
-                        <div class="skills-grid-item" class="g-i-sql">
-                            <img src="img/i_sql.webp" alt="">
-                            <div class="progress-bar-base">
-                                <div class="progress-bar-50"></div>
-                            </div>
-                        </div>
-            <div class="skills-grid-item" class="g-i-java">
-                <img src="img/i_java.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-70"></div>
-                </div>
-            </div>
-            <div class="skills-grid-item" class="g-i-c">
-                <img src="img/i_c.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-40"></div>
-                </div>
-            </div>
-            <div class="skills-grid-item" class="g-i-python">
-                <img src="img/i_python.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-45"></div>
-                </div>
-            </div>
-            <div class="skills-grid-item" class="g-i-visual">
-                <img src="img/i_visual.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-60"></div>
-                </div>
-            </div>
-            <div class="skills-grid-item" class="g-i-figma">
-                <img src="img/i_figma.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-85"></div>
-                </div>
-            </div>
-            <div class="skills-grid-item" class="g-i-github">
-                <img src="img/i_github.webp" alt="">
-                <div class="progress-bar-base">
-                    <div class="progress-bar-60"></div>
-                </div>
-            </div>
-        </div>
-        <br>
-    </section>
+    <script src="script/script.js"></script>
 </body>
 </html>

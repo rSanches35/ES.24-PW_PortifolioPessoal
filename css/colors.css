@@ -1,0 +1,23 @@
+:root {
+    /* Light Mode colors */
+        /* Background colors */
+            --background: #dddbf5;
+            --background-sibebar-overlay: #a19aff;
+            --background-sidebar: #292288;
+    
+            /* Font colors*/
+            --font: #d8d8d8;
+            --font-hover: #7970f3;
+
+    /* Dark Mode colors */
+    .dark-mode{
+        /* Background colors */
+        --background: #1f1f1f;
+        --background-sibebar-overlay: #242424;
+        --background-sidebar: #141414;
+
+        /* Font colors*/
+        --font: #818181;
+        --font-hover: #f1f1f1;
+    }
+}
