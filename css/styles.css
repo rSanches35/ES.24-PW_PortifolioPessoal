@@ -1,17 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Arial", sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--background);
-}
-
-body.overlay {
-    background-color: var(--background-sibebar-overlay);
 }
 
 .sidebar {
@@ -71,7 +73,7 @@ body.overlay {
 .openbtn {
     font-size: 23px;
     cursor: pointer;
-    background-color: #00000094;
+    background-color: #575757de;
     color: white;
     border: none;
     position: fixed;
@@ -86,9 +88,6 @@ body.overlay {
 .openbtn:hover {
     background-color: #444;
 }
-
-
-
 
 .switch {
     position: relative;
@@ -116,7 +115,7 @@ body.overlay {
     border-radius: 30px;
 }
   
-  .slider:before {
+.slider:before {
     position: absolute;
     content: "";
     height: 24px;
@@ -127,18 +126,51 @@ body.overlay {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
-  }
+}
   
-  input:checked + .slider {
+input:checked + .slider {
     background-color: #362ea5;
-  }
+}
   
-  input:focus + .slider {
+input:focus + .slider {
     box-shadow: 0 0 1px #362ea5;
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(20px);
-  }
+}
+
+footer {
+    background-color: var(--background-footer);
+    color: var(--font-footer-icon);
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 10px;
+}
+
+.icon i {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon i:hover {
+    transform: scale(1.1);
+}
+
+#copy-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--font-footer-icon);
+}

@@ -13,7 +13,6 @@ function closeNav() {
     document.removeEventListener("click", closeNavOnClickOutside);
 }
 
-/* Close with click */
 function closeNavOnClickOutside(event) {
     const sidebar = document.getElementById("sidebar");
     const openBtn = document.querySelector(".openbtn");
@@ -22,6 +21,31 @@ function closeNavOnClickOutside(event) {
     }
 }
 
+/* Footer Copy Info */
+function copyToClipboard(type) {
+    let textToCopy = '';
+    let message = '';
+
+    if (type === 'whatsapp') {
+        textToCopy = '+55 (44) 9926-4101';
+    }
+    else if (type === 'email') {
+        textToCopy = 'rafaelsanches.s35@gmail.com';
+    }
+
+    message = 'Copiado!';
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        document.getElementById('copy-message').innerText = message;
+        setTimeout(() => {
+            document.getElementById('copy-message').innerText = '';
+        }, 3000);
+    }).catch(err => {
+        console.error('Erro ao copiar o texto: ', err);
+    });
+}
+
+/* Change Theme */
 function lightDarkTheme() {
     var element = document.body;
     element.classList.toggle("dark-mode");
