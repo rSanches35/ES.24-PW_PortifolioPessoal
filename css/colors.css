@@ -5,21 +5,27 @@
             --background-sidebar: #292288;
             --background-footer: #534ace;
     
-            /* Font colors*/
+        /* Font colors*/
             --font: #d8d8d8;
             --font-hover: #7970f3;
             --font-footer-icon: #e7e7e7;
 
+            /* page:: Index */
+                --wave: url(../img/wave-light-mode.png);
+
     /* Dark Mode colors */
     .dark-mode{
         /* Background colors */
-        --background: #1f1f1f;
-        --background-sidebar: #141414;
-        --background-footer: #181818;
+            --background: #1f1f1f;
+            --background-sidebar: #141414;
+            --background-footer: #181818;
 
         /* Font colors*/
-        --font: #818181;
-        --font-hover: #f1f1f1;
-        --font-footer-icon: #f1f1f1;
+            --font: #818181;
+            --font-hover: #f1f1f1;
+            --font-footer-icon: #f1f1f1;
+
+            /* page:: Index */
+                --wave: url(../img/wave-dark-mode.png);
     }
 }

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rSanches Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/butterfly-p.webp">
     <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div id="sidebar" class="sidebar">
+    <nav id="sidebar" class="sidebar">
         <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
         <a href="#">Início</a>
         <a href="#">Habilidades</a>
@@ -23,7 +25,17 @@
                 <span onclick="lightDarkTheme()" class="slider"></span>
             </label>
         </div>
-    </div>
+    </nav>
+
+    <main>
+        <section class="wave-background">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+            <div class="wave wave-4"></div>
+        </section>
+    </main>
+
     <footer>
         <div class="icon-container">
             <div class="icon" onclick="copyToClipboard('whatsapp')">
