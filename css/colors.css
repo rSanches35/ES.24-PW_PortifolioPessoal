@@ -11,7 +11,7 @@
             --font-footer-icon: #e7e7e7;
 
             /* page:: Index */
-                --wave: url(../img/wave-light-mode.png);
+                --wave-img: url(../img/wave-light-mode.png);
 
     /* Dark Mode colors */
     .dark-mode{
@@ -26,6 +26,6 @@
             --font-footer-icon: #f1f1f1;
 
             /* page:: Index */
-                --wave: url(../img/wave-dark-mode.png);
+                --wave-img: url(../img/wave-dark-mode.png);
     }
 }
