@@ -106,6 +106,70 @@
     margin: 0;
 }
 
+.function-2-box{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 100px;
+}
+
+.func-2-area {
+    width: 500px;
+    background-color: var(--function-box-background);
+
+    border-radius: 14px;
+}
+
+.func-2-title {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 50px;
+    padding-bottom: 18px;
+
+    color: var(--font-purple);
+}
+
+.func-2-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.func-2-line label{
+
+    color: var(--function-input-background);
+
+    padding: 10px 20px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
+}
+
+.func-2-line label:hover{
+
+    transform: scale(1.2);
+}
+
+#dog-image {
+    max-width: 55%;
+    height: auto;
+    max-height: 30%;
+    border-radius: 8px;
+
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
 @media only screen and (max-width: 600px) {
 
     .func-1-area {
@@ -142,5 +206,13 @@
     
         font-size: 20px;
         text-align: center;
+    }
+
+    .func-2-area {
+
+        width: 90%;
+        background-color: var(--function-box-background);
+    
+        border-radius: 14px;
     }
 }

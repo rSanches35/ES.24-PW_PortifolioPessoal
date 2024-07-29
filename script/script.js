@@ -101,3 +101,39 @@ function calculate() {
     else { document.getElementById('value-4').value = '';}
 }
 document.querySelectorAll('input[type="number"]').forEach(input => { input.addEventListener('input', calculate);});
+
+/* Function 2 */
+const apiKey = 'live_5jRg2gw73o32tb4H1Sf5wdhViKm1ryAiRZfUxYwpCKvItBfn0hNNblWsWihje8o3'; // Substitua pela sua chave de API
+        const imageElement = document.getElementById('dog-image');
+        const button = document.getElementById('new-dog-button');
+
+        // Função para buscar uma imagem de cão
+        function fetchDogImage() {
+            fetch(`https://api.thedogapi.com/v1/images/search?api_key=${apiKey}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro ao obter imagem: ' + response.status);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Verifica se a resposta contém dados
+                    if (data && data.length > 0) {
+                        imageElement.src = data[0].url;
+                    } else {
+                        console.error('Nenhuma imagem encontrada.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                });
+        }
+
+        // Adiciona evento ao botão para buscar nova imagem
+        button.addEventListener('click', fetchDogImage);
+
+        // Busca uma imagem quando a página é carregada
+        fetchDogImage();
+
+// Get the initial image when the page loads
+getImage();
