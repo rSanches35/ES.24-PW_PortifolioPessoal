@@ -23,6 +23,10 @@
                 --function-active: #e97094;
                 --function-active-hover: #bd4b6d;
 
+                --function-box-background: #ccc9e9;
+                --function-input-background: #f5f5dc;
+
+
     /* Dark Mode colors */
     .dark-mode{
         /* Background colors */
@@ -47,5 +51,8 @@
 
                 --function-active: #e97094;
                 --function-active-hover: #bd4b6d;
+
+                --function-box-background: #252525;
+                --function-input-background: #ebebeb;
     }
 }

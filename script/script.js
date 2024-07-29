@@ -85,3 +85,19 @@ function restoreFunctionState() {
     devFunctionChange(activeFunction);
 }
 window.addEventListener('load', restoreFunctionState);
+
+
+/* Function 1 */
+function calculate() {
+    const value1 = parseFloat(document.getElementById('value-1').value) || 0;
+    const value2 = parseFloat(document.getElementById('value-2').value) || 0;
+    const value3 = parseFloat(document.getElementById('value-3').value) || 0;
+    let result = 0;
+
+    if (value1 && value2 && value3) {
+        result = (value2 * value3) / value1;
+        document.getElementById('value-4').value = result.toFixed(2);
+    }
+    else { document.getElementById('value-4').value = '';}
+}
+document.querySelectorAll('input[type="number"]').forEach(input => { input.addEventListener('input', calculate);});
