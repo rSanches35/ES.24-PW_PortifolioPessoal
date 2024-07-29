@@ -1,0 +1,49 @@
+.function {
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.function-active {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.function-1{
+    
+}
+
+.function-2{
+    
+}
+
+.function-3{
+    
+}
+
+.functions{
+    width: 100px;
+    height: 18px;
+
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.functions label { transition: color 0.2s ease;}
+
+.functions label { color: var(--function);}
+.functions label:hover { color: var(--function-hover);}
+
+.functions label.active { color: var(--function-active);}
+.functions label.active:hover { color: var(--function-active-hover);}

@@ -59,3 +59,29 @@ function lightDarkTheme() {
         document.getElementById("sun").style.display = "revert";
     }
  }
+
+ /* Change DEV Function */
+ function devFunctionChange(selectedFunction) {
+    const functions = document.querySelectorAll('.function');
+    const labels = document.querySelectorAll('.functions label');
+
+    functions.forEach((func, index) => { func.classList.remove('function-active');});
+    labels.forEach((label) => { label.classList.remove('active');});
+
+    const activeFunction = document.querySelector(`.function-${selectedFunction}`);
+    activeFunction.classList.add('function-active');
+    document.querySelector(`#function-${selectedFunction}`).classList.add('active');
+
+    localStorage.setItem('activeFunction', selectedFunction);
+}
+
+function restoreFunctionState() {
+    let activeFunction = localStorage.getItem('activeFunction');
+
+    if (!activeFunction) {
+        activeFunction = 1;
+        localStorage.setItem('activeFunction', activeFunction);
+    }
+    devFunctionChange(activeFunction);
+}
+window.addEventListener('load', restoreFunctionState);

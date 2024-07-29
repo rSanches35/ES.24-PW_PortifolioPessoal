@@ -16,6 +16,13 @@
             /* page:: Index */
                 --wave-img: url(../img/wave-light-mode.png);
 
+            /* page:: DEV-Functions */
+                --function: #ececec;
+                --function-hover: #ec98b2;
+
+                --function-active: #e97094;
+                --function-active-hover: #bd4b6d;
+
     /* Dark Mode colors */
     .dark-mode{
         /* Background colors */
@@ -33,5 +40,12 @@
 
             /* page:: Index */
                 --wave-img: url(../img/wave-dark-mode.png);
+
+            /* page:: DEV-Functions */
+                --function: #f1f1f1;
+                --function-hover: #d89191;
+
+                --function-active: #e97094;
+                --function-active-hover: #bd4b6d;
     }
 }
