@@ -235,3 +235,25 @@ footer {
     font-size: 14px;
     color: var(--font-footer-icon);
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .wave-background{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    .wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
+        background: var(--wave-img);
+        background-size: 1000px 600px;
+    }
+}

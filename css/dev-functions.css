@@ -105,3 +105,42 @@
     -webkit-appearance: none;
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .func-1-area {
+
+        padding-top: 25%;
+
+        width: 90%;
+        height: 80%;
+        background-color: var(--function-box-background);
+    
+        border-radius: 14px;
+    }
+
+    .func-1-line{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .func-1-area input {
+        color: var(--font-purple-2);
+    
+        width: 120px;
+        height: 60px;
+    
+        border: none;
+        outline: none;
+        
+        border-radius: 8px;
+    
+        background-color: var(--function-input-background);
+        transition: transform 0.3s ease;
+    
+        font-size: 20px;
+        text-align: center;
+    }
+}
