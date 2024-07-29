@@ -53,12 +53,32 @@ function lightDarkTheme() {
     if(document.body.classList.contains("dark-mode")){
         document.getElementById("moon").style.display = "revert";
         document.getElementById("sun").style.display = "none";
+        localStorage.setItem("theme", "dark-mode");
     }
     else {
         document.getElementById("moon").style.display = "none";
         document.getElementById("sun").style.display = "revert";
+        localStorage.setItem("theme", "light-mode");
     }
  }
+
+ function applyStoredTheme() {
+    var storedTheme = localStorage.getItem("theme");
+    var element = document.body;
+
+    if (storedTheme === "dark-mode") {
+        element.classList.add("dark-mode");
+        document.getElementById("moon").style.display = "revert";
+        document.getElementById("sun").style.display = "none";
+    }
+    else {
+        element.classList.remove("dark-mode");
+        document.getElementById("moon").style.display = "none";
+        document.getElementById("sun").style.display = "revert";
+    }
+}
+document.addEventListener("DOMContentLoaded", applyStoredTheme);
+
 
  /* Change DEV Function */
  function devFunctionChange(selectedFunction) {
