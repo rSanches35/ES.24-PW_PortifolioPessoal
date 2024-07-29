@@ -10,6 +10,9 @@
             --font-hover: #7970f3;
             --font-footer-icon: #e7e7e7;
 
+            --font-purple: #7d69a3;
+            --font-purple-2: #69558f;
+
             /* page:: Index */
                 --wave-img: url(../img/wave-light-mode.png);
 
@@ -24,6 +27,9 @@
             --font: #818181;
             --font-hover: #f1f1f1;
             --font-footer-icon: #f1f1f1;
+
+            --font-purple: #665883;
+            --font-purple-2: #5d4e7a;
 
             /* page:: Index */
                 --wave-img: url(../img/wave-dark-mode.png);
