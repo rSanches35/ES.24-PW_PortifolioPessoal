@@ -16,6 +16,11 @@
             /* page:: Index */
                 --wave-img: url(../img/wave-light-mode.png);
 
+            /* page:: Skills */
+                --skill-box-background: #ccc9e9;
+                --progress-bar: #e4e4e4;
+                --progress-percent: #7e76ec;
+
             /* page:: DEV-Functions */
                 --function: #ececec;
                 --function-hover: #ec98b2;
@@ -44,6 +49,11 @@
 
             /* page:: Index */
                 --wave-img: url(../img/wave-dark-mode.png);
+
+            /* page:: Skills */
+                --skill-box-background: #252525;
+                --progress-bar: #6d6d6d;
+                --progress-percent: #534ace;
 
             /* page:: DEV-Functions */
                 --function: #f1f1f1;

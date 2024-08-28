@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rSanches - Skills</title>
+    <link rel="icon" type="image/x-icon" href="img/butterfly-p.webp">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <nav id="sidebar" class="sidebar">
+        <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+        <a href="index.html">Início</a>
+        <a href="skills.html">Habilidades</a>
+        <a href="projects.html">Projetos</a>
+        <a href="dev-functions.html">Funções DEV</a>
+
+        <div class="dark_mode">
+            <label id="moon" class="icon_sun_moon"><i class="fa-solid fa-moon"></i></label>
+            <label id="sun" class="icon_sun_moon"><i class="fa-solid fa-sun"></i></label>
+            <label class="switch">
+                <input type="checkbox">
+                <span onclick="lightDarkTheme()" class="slider"></span>
+            </label>
+        </div>
+    </nav>
+
+
+    <main>
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="./img/canva_figma.png" alt="Logo Canva & Figma">
+                <div class="item-overlay">
+                    <span class="overlay-text">Canva & Figma</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 83%;"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./img/html_css.png" alt="Logo HTML & CSS">
+                <div class="item-overlay">
+                    <span class="overlay-text">HTML & CSS</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./img/js.webp" alt="Logo JavaScript">
+                <div class="item-overlay">
+                    <span class="overlay-text">JavaScript</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./img/react.png" alt="Logo ReactJS">
+                <div class="item-overlay">
+                    <span class="overlay-text">React JS</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 45%;"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./img/python.png" alt="Logo Python">
+                <div class="item-overlay">
+                    <span class="overlay-text">Python</span><br>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 30%;"></div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="./img/vscode_github.png" alt="Logo VSCode & GITHub">
+                <div class="item-overlay">
+                    <span class="overlay-text">VSCode & GITHub</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+
+    <section class="wave-background">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+        <div class="wave wave-4"></div>
+    </section>
+
+    <footer>
+        <div class="icon-container">
+            <div class="icon" onclick="copyToClipboard('whatsapp')">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="icon" onclick="copyToClipboard('email')">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+        <p id="copy-message"></p>
+    </footer>
+
+    <button class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
