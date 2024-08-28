@@ -21,6 +21,9 @@
                 --progress-bar: #e4e4e4;
                 --progress-percent: #7e76ec;
 
+            /* page:: Projects */
+                --font-projects: #7d69a3;
+
             /* page:: DEV-Functions */
                 --function: #ececec;
                 --function-hover: #ec98b2;
@@ -54,6 +57,9 @@
                 --skill-box-background: #252525;
                 --progress-bar: #6d6d6d;
                 --progress-percent: #534ace;
+
+            /* page:: Projects */
+                --font-projects: antiquewhite;
 
             /* page:: DEV-Functions */
                 --function: #f1f1f1;

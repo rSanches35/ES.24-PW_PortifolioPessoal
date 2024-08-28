@@ -76,7 +76,6 @@ body {
     padding: 10px;
 }
 
-/* Mostrar a sobreposição no hover */
 .grid-item:hover .item-overlay {
     opacity: 1;
 }
